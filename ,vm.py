@@ -82,3 +82,4 @@ yeni_isci.ekle()
 
 # Kalan kontenjanı veri tabanina kaydeTme yeri
 kalan_kontenjan = Bolum.bolumler["python"].get_kontenjan()
+print(f"Kalan kontenjan: {kalan_kontenjan}")
