@@ -41,7 +41,7 @@ class Isciler():
         # Verileri dosyaya geçirme yeri
         with open('isciler.json', 'w') as file:
             json.dump(data, file, indent=4)
-        # İşçi kaydı yapıldığında kontenjanı azaltın ve veritabanına güncel değeri kaydedin
+        # İşçi kaydı yapıldığın     da kontenjanı azaltın ve veritabanına güncel değeri kaydedin
         Bolum.bolumler[self.bolum].azalt_kontenjan()
         self.kaydet_kontenjan(Bolum.bolumler[self.bolum].get_kontenjan())
     def kaydet_kontenjan(self, kontenjan):
